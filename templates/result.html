@@ -1,0 +1,23 @@
+<ion-view>
+  <ion-nav-bar>
+    <ion-nav-title>
+      Result
+    </ion-nav-title>
+    <ion-nav-buttons side="left">
+      <button class="button button-dark" ng-click="btn_back()">Back</button>
+      <button class="button button-dark" ng-click="btn_recal()">Recal</button>
+      <button class="button button-dark" ng-click="btn_history()">History</button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+      <button class="button button-dark" ng-click="btn_exit()">Exit</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+    <div class="item item-icon-left">
+      เงินดาวน์ (บาท) : {{txt_down_bath}}  <br>
+      เงินดาวน์ (%) : {{txt_down_percent}}  <br>
+      ยอดจัด : {{txt_total}}  <br>
+      ค่างวด : {{txt_pay}}  <br>
+    </div>
+  </ion-content>
+</ion-view>
