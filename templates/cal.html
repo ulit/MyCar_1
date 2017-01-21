@@ -2,10 +2,10 @@
 <ion-nav-bar>
 	<ion-nav-title>Calculate</ion-nav-title>
 	<ion-nav-buttons side="left">
-		<button class="button button-dark">Setup</button>
+		<button class="button button-dark" ng-click="btn_back()">back</button>
 	</ion-nav-buttons>
 	<ion-nav-buttons side="right">
-		<button class="button button-dark" ng-click="godetail()">Exit</button>
+		<button class="button button-dark" ng-click="btn_exit()">Exit</button>
 	</ion-nav-buttons>
 </ion-nav-bar>
 
@@ -24,7 +24,7 @@
 
 	<label class="item item-input">
 		<span class="input-label">ระยะเวลา:</span>
-		
+
 		 <select ng-model="form.totalMonth">
 		      <option>12</option>
 		      <option>36</option>

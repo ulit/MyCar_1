@@ -19,7 +19,7 @@ angular.module('MyCar')
           console.log(response);
           if (response.data.results == 'success_login') {
             console.log('login success');
-            //$state.go('cal');
+            $state.go('cal');
           }
         },function (error) {
           console.log(error);

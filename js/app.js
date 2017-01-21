@@ -31,7 +31,7 @@ angular.module('MyCar', ['ionic'])
       controller:'loginControl'
     })
     .state('result',{
-      url:'/result',
+      url:'/result:{txt_down_baht}/{txt_down_percent}/{txt_total_month}/{txt_pay_permonth}',
       templateUrl:'templates/result.html',
       controller:'resultControl'
     })
@@ -41,7 +41,7 @@ angular.module('MyCar', ['ionic'])
       controller:'calController'
     })
 
-  $urlRouterProvider.otherwise('/cal')
+  $urlRouterProvider.otherwise('/login')
 });
 
 

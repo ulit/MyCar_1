@@ -5,6 +5,16 @@ angular.module('MyCar')
 
   $scope.form={};
 
+  $scope.btn_exit = function () {
+    console.log("exit press");
+    $state.go('login');
+  }
+
+  $scope.btn_back = function () {
+    console.log("back press");
+    $state.go('login');
+  }
+
   $scope.btnCal=function(record){
   	var price=$scope.form.price;
   	var downPay=$scope.form.downPay;
@@ -25,7 +35,7 @@ angular.module('MyCar')
 
   	//alert(downPercent);
 
-  	state.go('result',{txt_down_baht:downPay,txt_down_percent:downPercent,txt_total_month:totalMonth,txt_pay_permonth:payPerMonth});
+  	$state.go('result',{txt_down_baht:downPay,txt_down_percent:downPercent,txt_total_month:totalMonth,txt_pay_permonth:payPerMonth});
   	//console.log(record);
   }
 })
