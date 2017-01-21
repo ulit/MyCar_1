@@ -21,4 +21,29 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
   });
-})
+})//End**
+
+.config(function($stateProvider,$urlRouterProvider){
+  $stateProvider
+
+  .state('cal',{
+      url:'/cal',
+      templateUrl:'templates/cal.html',
+      controller:'calController'
+  })
+
+  /*.state('detail',{
+    url:'/detail:{name}/{nick}/{social}/{mobile}',
+    templateUrl:'templates/detail.html',
+    controller:'detailController'
+  })
+
+  .state('login',{
+      url:'/login',
+      templateUrl:'templates/login.html',
+      controller:'loginController'
+  })*/
+
+  $urlRouterProvider.otherwise('/cal')
+
+})//End**
