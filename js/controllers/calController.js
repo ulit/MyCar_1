@@ -29,7 +29,7 @@ angular.module('MyCar')
 
   	//==============Calculate===========================
   	var netPrice=price-downPay;
-  	var totalPay=(((netPrice*3)/100)*totalMonth)+netPrice;
+  	var totalPay=(((netPrice*3)/100)*(totalMonth/12))+netPrice;
   	var payPerMonth=totalPay/totalMonth;
   	var downPercent=(netPrice*100)/price;
 
