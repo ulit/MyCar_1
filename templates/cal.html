@@ -1,8 +1,47 @@
 <ion-view>
 <ion-nav-bar>
-<ion-nav-title>MyCar</ion-nav-title>
-<ion-nave-buttons side="left">
-<button class="button"></button>
-</ion-nave-buttons>
+	<ion-nav-title>Calculate</ion-nav-title>
+	<ion-nav-buttons side="left">
+		<button class="button button-dark">Setup</button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<button class="button button-dark" ng-click="godetail()">Exit</button>
+	</ion-nav-buttons>
 </ion-nav-bar>
+
+<ion-content>
+<h3>Input Data</h3>
+<div class="list">
+	<label class="item item-input">
+		<span class="input-label">ราคารถ:</span>
+		<input type="text" placeholder="บาท" ng-model="form.price">
+	</label>
+
+	<label class="item item-input">
+		<span class="input-label">เงินดาวน์:</span>
+		<input type="text" placeholder="บาท" ng-model="form.downPay">
+	</label>
+
+	<label class="item item-input">
+		<span class="input-label">ระยะเวลา:</span>
+		
+		 <select ng-model="form.totalMonth">
+		      <option>12</option>
+		      <option>36</option>
+		      <option>48</option>
+		      <option>60</option>
+		      <option>72</option>
+		 </select>
+		   เดือน
+	</label>
+
+	<label class="item item-input">
+		<span class="input-label">ดอกเบี้ย:</span>
+		<input type="text" placeholder="%" ng-model="form.interest">
+	</label>
+
+	<button class="button button-full button-dark" ng-click="btnCal()">Calculate</button>
+</div>
+
+</ion-content>
 </ion-view>

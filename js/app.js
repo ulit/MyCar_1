@@ -35,6 +35,14 @@ angular.module('MyCar', ['ionic'])
       templateUrl:'templates/result.html',
       controller:'resultControl'
     })
+    .state('cal',{
+      url:'/cal',
+      templateUrl:'templates/cal.html',
+      controller:'calController'
+    })
 
-  $urlRouterProvider.otherwise('/result')
+  $urlRouterProvider.otherwise('/cal')
 });
+
+
+
